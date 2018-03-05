@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru-RU">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,10 @@
   </head>
   <body>
     <header class="header">
+      <a class="header__logo-link" href="index.html">
+        <img class="header__logo" src="http://placehold.it/150x100" alt="Логотип сайта Седона">
+      </a>
       <nav class="header__nav">
-        <a class="header__logo-link" href="index.html">
-          <img class="header__logo" src="http://placehold.it/150x100" alt="Логотип сайта Седона">
-        </a>
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link" href="#">Информация</a>
@@ -23,7 +23,7 @@
             <a class="header__link" href="#">Карта штата</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="#">Гостиницы</a>
+            <a class="header__link header__link_active" href="#">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -36,14 +36,23 @@
       <section class="hotels">
         <h2 class="visually-hidden">Гостиницы</h2>
         <span class="hotels__description">Найдено: 3</span>
-        <span class="text">Сортировка:</span>
-        <button class="btn active">По цене</button>
-        <button class="btn">По типу</button>
-        <button class="btn">По рейтингу</button>
+        <span class="hotels__text">Сортировка:</span>
+        <ul class="sorting">
+          <li class="sorting__item">
+            <a class="sorting__link
+            sorting__link_active" href="#">По цене</a>
+          </li>
+          <li class="sorting__item">
+            <a class="sorting__link" href="#">По типу</a>
+          </li>
+          <li class="sorting__item">
+            <a class="sorting__link" href="#">По рейтингу</a>
+          </li>
+        </ul>
         <ul class="hotels__list">
           <li class="hotels__item">
             <img class="hotels__img" src="http://placehold.it/150x100" alt="Гостиница">
-            <p class="hotels__name">Amara Resort &#38; Spa</p>
+            <h3 class="hotels__name">Amara Resort &#38; Spa</h3>
             <span class="hotels__type">Гостиница</span>
             <span class="hotels__cost">От 4000 р.</span>
             <a class="hotels__info" href="#">Подробнее</a>
@@ -52,7 +61,7 @@
           </li>
           <li class="hotels__item">
             <img class="hotels__img" src="http://placehold.it/150x100" alt="Мотель">
-            <p class="hotels__name">Desert Quail Inn</p>
+            <h3 class="hotels__name">Desert Quail Inn</h3>
             <span class="hotels__type">Мотель</span>
             <span class="hotels__cost">От 3000 р.</span>
             <a class="hotels__info" href="#">Подробнее</a>
@@ -61,7 +70,7 @@
           </li>
           <li class="hotels__item">
             <img class="hotels__img" src="http://placehold.it/150x100" alt="Аппартаменты">
-            <p class="hotels__name">Villas at Poco Diablo</p>
+            <h3 class="hotels__name">Villas at Poco Diablo</h3>
             <span class="hotels__type">Апартаменты</span>
             <span class="hotels__cost">От 2000 р.</span>
             <a class="hotels__info" href="#">Подробнее</a>
@@ -75,15 +84,23 @@
       <p class="footer__hashtag">#Visitsedona</p>
       <div class="socials">
         <ul class="socials__list">
-          <li class="socials__item"><a class="socials__link" href="#">Твиттер</a></li>
-          <li class="socials__item"><a class="socials__link" href="#">Фейсбук</a></li>
-          <li class="socials__item"><a class="socials__link" href="#">Ютюб</a></li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">Твиттер</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">Фейсбук</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">Ютюб</a>
+          </li>
         </ul>
       </div>
       <div class="footer__copyright">
-          <span class="footer__copyright-text">Website by</span>
-          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank">Html Academy</a>
-        </div>
+        <span class="footer__copyright-text">Website by</span>
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank">
+          <img class="footer__copyright-logo" src="http://placehold.it/150x100" alt="Логотип HTML Academy">
+         </a>
+      </div>
     </footer>
   </body>
 </html>
