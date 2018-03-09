@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo-link" href="index.html">
+      <a class="header__logo-link" href="index.html" aria-label="Ссылка на главную страницу Седоны">
         <img class="header__logo" src="img/logo/logo-sedona.png" width="140" height="70" alt="Логотип сайта Седона">
       </a>
       <nav class="header__nav">
@@ -67,10 +67,24 @@
               </li>
             </ul>
           </fieldset>
+          <fieldset class="filter__form-fieldset">
+            <legend class="filter__form-legend">Стоимость в сутки (Р):</legend>
+            <p class="filter__form-row">
+              <label class="filter__form-label" for="min-price" aria-label="Минимальная стоимость">От</label>
+              <input class="filter__form-input" id="min-price" type="number" name="minimum-price" min="0" max="3500" step="500" value="0">
+              <label class="filter__form-label" for="max-price" aria-label="Максимальная стоимость">До</label>
+              <input class="filter__form-input" id="max-price" type="number" name="maximum-price" min="0" max="3500" step="500" value="3000">
+            </p>
+            <p class="filter__form-row">
+              <label class="visually-hidden" for="filter-range">Диапазон цен за жильё</label>
+              <input class="filter__form-input" id="filter-range" type="range" min="0" max="3500" step="500" value="3000">
+            </p>
+          <button class="button button__show" type="submit">Показать</button>
+          </fieldset>
         </form>
       </section>
       <section class="hotels">
-        <h2 class="visually-hidden">Гостиницы</h2>
+        <h2 class="visually-hidden">Жильё</h2>
         <span class="hotels__description">Найдено: 3</span>
         <span class="hotels__text">Сортировка:</span>
         <ul class="sorting">
