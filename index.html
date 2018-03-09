@@ -29,9 +29,8 @@
     <main class="main">
       <h1 class="visually-hidden">Сайт поиска жилья в живописном городке Седона</h1>
       <section class="welcome">
-        <h2 class="welcome__title">Sedona</h2>
-        <p class="welcome__slogan">Welcome <span class="welcome__description">to the gorgeous</span></p>
-        <q class="welcome__quote">Because the Grand Canyon sucks!</q>
+        <h2 class="visually-hidden">Welcome to the gorgeous Sedona</h2>
+        <div class="welcome__intro"></div>
       </section>
       <section class="advantages">
         <h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -40,7 +39,7 @@
           <li class="advantages__item">
             <p class="advantages__description advantages__description_white-text">Настоящий городок</p>
             <span class="advantages__number">№1</span>
-            <p class="advantages__text advantages__text-white-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="advantages__text advantages__text_white-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <ul class="infrastructure">
               <li class="infrastructure__item">
                 <p class="infrastructure__description">Жилье</p>
@@ -59,7 +58,7 @@
           <li class="advantages__item">
             <p class="advantages__description advantages__description_white-text">Там есть мост дьявола</p>
             <span class="advantages__number">№2</span>
-            <p class="advantages__text advantages__text-white-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <p class="advantages__text advantages__text_white-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
           <li class="advantages__item">
             <p class="advantages__description">Небольшая площадь</p>
@@ -82,8 +81,10 @@
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="hotel-search__title">Заинтересовались?</p>
         <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="button">Поиск гостиницы в Седоне</button>
-        <form class="hotel-search__form" action="#"></form>
+        <button class="button button__hotel-search" type="button">Поиск гостиницы в Седоне</button>
+        <form class="hotel-search__form" action="https://echo.htmlacademy.ru" method="POST">
+
+        </form>
       </section>
       <article class="map">
         <h2 class="visually-hidden">Карта Седоны</h2>
@@ -107,7 +108,7 @@
       </div>
       <div class="footer__copyright">
         <span class="footer__copyright-text">Website by</span>
-        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank">
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank" aria-label="HTML Academy">
           <img class="footer__copyright-logo" src="img/logo/logo-htmlacademy.svg" width="115" height="45" alt="Логотип HTML Academy">
          </a>
       </div>
