@@ -211,6 +211,13 @@ a {
   border-radius: 2px;
 }
 
+.button__show:hover,
+.button__show:focus {
+  color: #000;
+  background-color: #fff;
+  outline: none;
+}
+
 .hotels__description {
   font-size: 21px;
   line-height: 26px;
@@ -222,6 +229,89 @@ a {
   line-height: 18px;
 }
 
+.sorting {
+  list-style: none;
+}
+
+.sorting__link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #cacaca;
+  border-bottom: 2px dotted #81b3d2;
+}
+
+.sorting__link:hover,
+.sorting__link:focus {
+  color: #8bb9d5;
+}
+
+.sorting__link:active {
+  color: #000;
+  border: none;
+}
+
+.sorting__link_active {
+  color: #81b3d2;
+  border: none;
+}
+
+.hotels__list {
+  list-style: none;
+}
+
+.hotels__link {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000;
+}
+
+.hotels__link:hover,
+.hotels__link:focus {
+  color: #81b3d2;
+}
+
+.hotels__link:active {
+  color: #cacaca;
+}
+
+.hotels__type,
+.hotels__cost,
+.hotels__rating {
+  font: inherit;
+  font-weight: 400;
+  color: #333;
+}
+
+.hotels__info {
+  color: #fff;
+  background-color: #81b3d2;
+}
+
+.hotels__info:hover,
+.hotels__info:focus {
+  background-color: #669ec0;
+}
+
+.hotels__info:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+.hotels__booking {
+  color: #fff;
+  background-color: #766357;
+}
+
+.hotels__booking:hover,
+.hotels__booking:focus {
+  background-color: #604e43;
+}
+
+.hotels__booking:active {
+  color: #928a85;
+  background-color: #503e33;
+}
 
 /* ===== Стили для футера*/
 .footer {
