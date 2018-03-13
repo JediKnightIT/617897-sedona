@@ -43,3 +43,57 @@ a {
 .header__link_active {
   color: #766357;
 }
+
+/* ===== Стили для основного контента на главной странице */
+.advantages__title {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages__subtitle {
+  font-weight: 400;
+  line-height: 26px;
+  color: #333;
+  text-align: center;
+}
+
+.advantages__list,
+.infrastructure {
+  list-style: none;
+}
+
+.advantages__item {
+  text-align: center;
+  background-color: #eee;
+}
+
+.advantages__item_blue {
+  background-color: #81b3d2;
+}
+
+.advantages__description,
+.infrastructure__description {
+  font-size: 21px;
+}
+
+.advantages__number,
+.advantages__text,
+.infrastructure__text {
+  font-weight: 400;
+  color: #333;
+}
+
+.advantages__description_white-text,
+.advantages__number_white,
+.advantages__text_white-text {
+  color: #fff;
+}
+
+.infrastructure {
+  background-color: #fff;
+}
+
+.hotel-search {
+  background-color: #fff;
+}
