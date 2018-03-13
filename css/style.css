@@ -167,3 +167,81 @@ a {
   color: #94b9d2;
   background-color: #5496bd;
 }
+
+/* ===== Стили для основного контента на станице hotels */
+.filter {
+  background-color: #2a3e45;
+  background-image: url("/img/hotels/filter-bcg.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.filter__form-fieldset {
+  border: none;
+}
+
+.filter__form-legend {
+  font-size: 16px;
+  color: #fff;
+}
+
+.filter__form-list {
+  list-style: none;
+}
+
+.filter__form-label {
+  font-weight: 400;
+  color: #fff;
+}
+
+.filter__form-input {
+  font: inherit;
+  font-weight: 400;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  outline: transparent;
+}
+
+.button__show {
+  font-weight: 400;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.hotels__description {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotels__text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+
+/* ===== Стили для футера*/
+.footer {
+  background-color: rgba(249,251,246,.9);
+}
+
+.footer__hashtag {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.socials__list {
+  list-style: none;
+}
+
+.socials__link {
+  font-size: 0;
+}
+
+.footer__copyright-text {
+  font-weight: 400;
+  line-height: 26px;
+}
