@@ -1,3 +1,4 @@
+/* ===== Глобальные стили */
 body {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 21px;
   color: #000;
   text-transform: uppercase;
 
@@ -16,3 +17,29 @@ a {
   text-decoration: none;
 }
 
+/* ===== Стили для хэдера */
+.header {
+  background-color: #fff;
+}
+
+.header__list {
+  list-style: none;
+}
+
+.header__link {
+  line-height: 26px;
+  color: #000;
+}
+
+.header__link:hover,
+.header__link:focus {
+  color: #81b3d2;
+}
+
+.header__link:active {
+  color: #cacaca;
+}
+
+.header__link_active {
+  color: #766357;
+}
