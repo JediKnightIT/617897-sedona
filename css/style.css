@@ -77,7 +77,6 @@ a {
   font-size: 21px;
 }
 
-.advantages__number,
 .advantages__text,
 .infrastructure__text {
   font-weight: 400;
@@ -85,7 +84,6 @@ a {
 }
 
 .advantages__description_white-text,
-.advantages__number_white,
 .advantages__text_white-text {
   color: #fff;
 }
@@ -148,6 +146,18 @@ a {
   background-color: #ebebeb;
 }
 
+::-webkit-input-placeholder {
+  color: #000;
+}
+
+::-moz-placeholder {
+  color: #000;
+}
+
+::-webkit-input-placeholder {
+  color: #000;
+}
+
 .hotel-search__form-input:focus {
   background-color: #fff;
   border: 2px solid #e5e5e5;
@@ -171,7 +181,7 @@ a {
 /* ===== Стили для основного контента на станице hotels */
 .filter {
   background-color: #2a3e45;
-  background-image: url("/img/hotels/filter-bcg.jpg");
+  background-image: url("../img/hotels/filter-bcg.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -205,6 +215,7 @@ a {
 }
 
 .button__show {
+  font-size: 14px;
   font-weight: 400;
   background-color: transparent;
   border: 2px solid #fff;
@@ -216,6 +227,10 @@ a {
   color: #000;
   background-color: #fff;
   outline: none;
+}
+
+.hotels {
+  background-color: #fefefe;
 }
 
 .hotels__description {
@@ -238,7 +253,7 @@ a {
   font-weight: 400;
   line-height: 18px;
   color: #cacaca;
-  border-bottom: 2px dotted #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting__link:hover,
@@ -257,7 +272,12 @@ a {
 }
 
 .hotels__list {
+  border-bottom: 1px solid #e5e5e5;
   list-style: none;
+}
+
+.hotels__item {
+  border-top: 1px solid #e5e5e5;
 }
 
 .hotels__link {
@@ -275,9 +295,7 @@ a {
   color: #cacaca;
 }
 
-.hotels__type,
-.hotels__cost,
-.hotels__rating {
+.hotels__about {
   font: inherit;
   font-weight: 400;
   color: #333;
@@ -311,6 +329,10 @@ a {
 .hotels__booking:active {
   color: #928a85;
   background-color: #503e33;
+}
+
+.hotels__about_rating {
+  background-color: #f2f2f2;
 }
 
 /* ===== Стили для футера*/
