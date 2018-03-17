@@ -69,6 +69,10 @@ a {
   background-size: cover;
 }
 
+.promo {
+  background-color: #fff;
+}
+
 .promo__title {
   font-size: 21px;
   line-height: 26px;
@@ -82,9 +86,16 @@ a {
   text-align: center;
 }
 
+
 .first-reason__title {
   font-size: 21px;
 }
+
+
+
+
+
+
 
 .advantages__list,
 .infrastructure {
