@@ -86,6 +86,10 @@ a {
   text-align: center;
 }
 
+.wrap-reason {
+  background-color: #81b3d2;
+}
+
 .reason__title {
   font-size: 21px;
   color: #fff;
@@ -94,6 +98,27 @@ a {
 .reason__text {
   font-weight: 400;
   color: #fff;
+}
+
+.info {
+  background-color: #fff;
+}
+
+.info__list {
+  list-style: none;
+}
+
+.info__item {
+  text-align: center;
+}
+
+.info__title {
+  font-size: 21px;
+}
+
+.info__text {
+  font-weight: 400;
+  color: #333;
 }
 
 .hotel-search {
