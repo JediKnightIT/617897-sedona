@@ -20,7 +20,6 @@ body {
   line-height: 21px;
   color: #000;
   text-transform: uppercase;
-
   background-color: #f2f2f2;
 }
 
@@ -31,6 +30,7 @@ a {
 .wrapper {
   margin: 0 auto;
   width: 1200px;
+  box-shadow: 0 0 10px 3px lightgrey;
 }
 
 /* ===== Стили для хэдера */
@@ -39,6 +39,8 @@ a {
 }
 
 .header__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -65,8 +67,14 @@ a {
   background-color: #31444f;
   background-image: url("../img/index/welcome-bcg.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 -85px;
   background-size: cover;
+}
+
+.welcome__img {
+  display: block;
+  margin: 0 auto;
+  padding: 75px 0;
 }
 
 .promo {
@@ -74,12 +82,14 @@ a {
 }
 
 .promo__title {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
 }
 
 .promo__subtitle {
+  margin: 0;
   font-weight: 400;
   line-height: 26px;
   color: #333;
