@@ -86,49 +86,14 @@ a {
   text-align: center;
 }
 
-
-.first-reason__title {
+.reason__title {
   font-size: 21px;
-}
-
-
-
-
-
-
-
-.advantages__list,
-.infrastructure {
-  list-style: none;
-}
-
-.advantages__item {
-  text-align: center;
-  background-color: #eee;
-}
-
-.advantages__item_blue {
-  background-color: #81b3d2;
-}
-
-.advantages__description,
-.infrastructure__description {
-  font-size: 21px;
-}
-
-.advantages__text,
-.infrastructure__text {
-  font-weight: 400;
-  color: #333;
-}
-
-.advantages__description_white-text,
-.advantages__text_white-text {
   color: #fff;
 }
 
-.infrastructure {
-  background-color: #fff;
+.reason__text {
+  font-weight: 400;
+  color: #fff;
 }
 
 .hotel-search {
