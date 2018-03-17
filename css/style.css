@@ -10,6 +10,13 @@
   overflow: hidden;
 }
 
+*, *!:before, *!:after {
+ box-sizing: inherit;
+}
+html {
+ box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -90,7 +97,7 @@ a {
 
 .promo__title {
   margin: 0;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -104,19 +111,41 @@ a {
   text-align: center;
 }
 
+.reason {
+  display: flex;
+}
+
 .wrap-reason {
+  width: 34%;
+  padding: 40px 59px;
   text-align: center;
   background-color: #81b3d2;
+  box-sizing: border-box;
 }
 
 .reason__title {
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   font-size: 21px;
   color: #fff;
 }
 
 .reason__text {
+  margin: 0;
+  margin-bottom: 25px;
   font-weight: 400;
   color: #fff;
+}
+
+.hidden {
+  width: 66%;
+  height: 255px;
+  overflow: hidden;
+}
+
+.reason__img {
+  max-width: 100%;
 }
 
 .info {
