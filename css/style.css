@@ -87,6 +87,7 @@ a {
 }
 
 .wrap-reason {
+  text-align: center;
   background-color: #81b3d2;
 }
 
@@ -121,9 +122,30 @@ a {
   color: #333;
 }
 
-.hotel-search {
-  background-color: #fff;
+.other-reasons {
+  background-color: #eee;
+}
+
+.other-reasons__list {
+  list-style: none;
+}
+
+.other-reasons__item {
   text-align: center;
+}
+
+.other-reasons__title {
+  font-size: 21px;
+}
+
+.other-reasons__text {
+  font-weight: 400;
+  color: #333;
+}
+
+.hotel-search {
+  text-align: center;
+  background-color: #fff;
 }
 
 .hotel-search__title {
