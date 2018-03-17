@@ -82,6 +82,10 @@ a {
   text-align: center;
 }
 
+.first-reason__title {
+  font-size: 21px;
+}
+
 .advantages__list,
 .infrastructure {
   list-style: none;
