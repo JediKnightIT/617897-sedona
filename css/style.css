@@ -10,17 +10,9 @@
   overflow: hidden;
 }
 
-*, *!:before, *!:after {
- box-sizing: inherit;
-}
-html {
- box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -117,7 +109,7 @@ a {
 
 .wrap-reason {
   width: 34%;
-  padding: 40px 59px;
+  padding: 40px 52px;
   text-align: center;
   background-color: #81b3d2;
   box-sizing: border-box;
@@ -149,26 +141,37 @@ a {
 }
 
 .info {
+  padding: 60px;
   background-color: #fff;
 }
 
 .info__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .info__item {
+  width: 33.3%;
   text-align: center;
 }
 
 .info__icon {
+  margin-bottom: 25px;
   fill: #81b3d2;
 }
 
 .info__title {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 21px;
 }
 
 .info__text {
+  margin: 0;
+  padding: 0px 30px;
   font-weight: 400;
   color: #333;
 }
