@@ -1,4 +1,5 @@
 /* ===== Глобальные стили */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -33,6 +34,7 @@ a {
 }
 
 /* ===== Стили для хэдера */
+
 .header {
   background-color: #fff;
 }
@@ -62,6 +64,7 @@ a {
 }
 
 /* ===== Стили для основного контента на главной странице */
+
 .welcome {
   background-color: #31444f;
   background-image: url("../img/index/welcome-bcg.jpg");
@@ -261,7 +264,8 @@ a {
 
 .hotel-search__form-input {
   background-color: #f2f2f2;
-  border: 2px solid transparent;;
+  border: 2px solid transparent;
+  ;
 }
 
 .calendar__icon {
@@ -315,6 +319,7 @@ a {
 }
 
 /* ===== Стили для основного контента на станице hotels */
+
 .filter {
   background-color: #2a3e45;
   background-image: url("../img/hotels/filter-bcg.jpg");
@@ -430,7 +435,7 @@ a {
 
 .triangle:hover,
 .triangle:focus {
-fill: #231f20;
+  fill: #231f20;
 }
 
 .triangle:active {
@@ -506,17 +511,40 @@ fill: #231f20;
 }
 
 /* ===== Стили для футера*/
+
 .footer {
-  background-color: rgba(249,251,246,.9);
+  display: flex;
+  align-items: center;
+  padding: 35px 73px;
+  background-color: rgba(249, 251, 246, .9);
 }
 
 .footer__hashtag {
+  width: 33.3%;
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
+}
+
+.socials {
+  width: 33.3%;
 }
 
 .socials__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.socials__item {
+  margin-right: 6px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
 }
 
 .socials__link {
@@ -524,6 +552,7 @@ fill: #231f20;
   width: 48px;
   height: 48px;
   fill: #fff;
+  text-align: center;
   background-color: #81b3d2;
 }
 
@@ -540,6 +569,11 @@ fill: #231f20;
 .footer__copyright-text {
   font-weight: 400;
   line-height: 26px;
+}
+
+.footer__copyright {
+  width: 33.3%;
+  text-align: center;
 }
 
 .footer__copyright-link:hover,
