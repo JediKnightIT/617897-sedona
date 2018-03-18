@@ -170,44 +170,61 @@ a {
 }
 
 .info__text {
-  margin: 0;
-  padding: 0px 30px;
+  width: 300px;
+  margin: 0 auto;
   font-weight: 400;
   color: #333;
 }
 
 .other-reasons {
+  padding: 45px;
   background-color: #eee;
 }
 
 .other-reasons__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .other-reasons__item {
+  width: 33.3%;
   text-align: center;
 }
 
 .other-reasons__title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 160px;
   font-size: 21px;
 }
 
 .other-reasons__text {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 270px;
   font-weight: 400;
   color: #333;
 }
 
 .hotel-search {
+  padding-top: 55px;
   text-align: center;
   background-color: #fff;
 }
 
 .hotel-search__title {
+  margin: 0;
+  margin-bottom: 33px;
   font-size: 30px;
   line-height: 36px;
 }
 
 .hotel-search__text {
+  margin: 0;
+  margin-bottom: 50px;
   font-weight: 400;
   line-height: 24px;
   color: #333;
