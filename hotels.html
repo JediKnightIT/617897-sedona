@@ -39,7 +39,7 @@
         <section class="filter">
           <h2 class="visually-hidden">Форма поиска гостиниц</h2>
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="POST">
-            <fieldset class="filter__form-fieldset">
+            <fieldset class="filter__form-fieldset filter__form-fieldset_col1">
               <legend class="filter__form-legend">Инфраструктура:</legend>
               <ul class="filter__form-list">
                 <li class="filter__form-item">
@@ -56,7 +56,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter__form-fieldset">
+            <fieldset class="filter__form-fieldset filter__form-fieldset_col2">
               <legend class="filter__form-legend">Тип жилья:</legend>
               <ul class="filter__form-list">
                 <li class="filter__form-item">
@@ -73,7 +73,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter__form-fieldset">
+            <fieldset class="filter__form-fieldset filter__form-fieldset_col3">
               <legend class="filter__form-legend">Стоимость в сутки (Р):</legend>
               <p class="filter__form-row">
                 <label class="filter__form-label" for="min-price" aria-label="Минимальная стоимость">От</label>
@@ -82,8 +82,16 @@
                 <input class="filter__form-input" id="max-price" type="text" name="maximum-price" placeholder="3000">
               </p>
               <p class="filter__form-range">
-                <label class="visually-hidden" for="filter-range">Диапазон цен за жильё</label>
-                <input class="filter__form-input" id="filter-range" type="range" min="0" max="3500" step="500" value="3000">
+                <button class="filter__circle" type="button">
+                  <svg class="circle-icon" width="23" height="23">
+                    <use xlink:href="img/sprite.svg#filter-circle"></use>
+                  </svg>
+                </button>
+                <button class="filter__circle" type="button">
+                  <svg class="circle-icon" width="23" height="23">
+                    <use xlink:href="img/sprite.svg#filter-circle"></use>
+                  </svg>
+                </button>
               </p>
             <button class="button button__show" type="submit">Показать</button>
             </fieldset>

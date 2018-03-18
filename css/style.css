@@ -328,17 +328,44 @@ a {
   background-size: cover;
 }
 
+.filter__form {
+  display: flex;
+  padding: 27px 73px;
+}
+
 .filter__form-fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
+.filter__form-fieldset_col1,
+.filter__form-fieldset_col2 {
+  width: 25%;
+}
+
+.filter__form-fieldset_col2 {
+  margin-right: auto;
+}
+
+.filter__form-fieldset_col3 {
+  width: 34%;
+}
+
 .filter__form-legend {
+  margin-bottom: 20px;
   font-size: 16px;
   color: #fff;
 }
 
 .filter__form-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.filter__form-item {
+  margin-bottom: 15px;
 }
 
 .filter__form-label {
@@ -356,6 +383,7 @@ a {
 }
 
 .filter__form-row {
+  margin: 0;
   border: 1px solid #fff;
   border-radius: 2px;
 }
@@ -370,6 +398,18 @@ a {
 
 .filter__form-input::-webkit-input-placeholder {
   color: #fff;
+}
+
+.filter__form-range {
+  height: 3px;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.filter__circle {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .button__show {
