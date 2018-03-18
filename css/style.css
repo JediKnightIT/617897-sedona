@@ -492,27 +492,25 @@ a {
   background-color: #fefefe;
 }
 
-.hotels__description {
-  font-size: 21px;
-  line-height: 26px;
-}
-
-.hotels__text {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
-}
-
 .hotels__list {
+  margin: 0;
+  padding: 0;
   border-bottom: 1px solid #e5e5e5;
   list-style: none;
 }
 
 .hotels__item {
+  display: flex;
+  padding: 30px 73px;
   border-top: 1px solid #e5e5e5;
 }
 
+.hotels__link_margin {
+  margin-right: 30px;
+}
+
 .hotels__link {
+  display: inline-block;
   font-size: 21px;
   line-height: 26px;
   color: #000;
@@ -525,6 +523,20 @@ a {
 
 .hotels__link:active {
   color: #cacaca;
+}
+
+.wrap-info {
+  margin-right: auto;
+}
+
+.hotels__name {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.hotels__row {
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .hotels__about {
@@ -561,6 +573,10 @@ a {
 .hotels__booking:active {
   color: #928a85;
   background-color: #503e33;
+}
+
+.wrap-rating {
+  padding-top: 75px;
 }
 
 .hotels__about_rating {
