@@ -270,7 +270,7 @@ a {
 
 .calendar__icon {
   fill: #cacaca;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .calendar__icon:hover,
@@ -339,16 +339,16 @@ a {
   border: none;
 }
 
-.filter__form-fieldset_col1,
-.filter__form-fieldset_col2 {
+.filter__form-fieldset_infrastructure,
+.filter__form-fieldset_dwelling {
   width: 25%;
 }
 
-.filter__form-fieldset_col2 {
+.filter__form-fieldset_dwelling {
   margin-right: auto;
 }
 
-.filter__form-fieldset_col3 {
+.filter__form-fieldset_cost {
   width: 34%;
 }
 
@@ -402,7 +402,7 @@ a {
 
 .filter__form-range {
   height: 3px;
-  background-color: rgba(255, 255, 255, .3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .filter__circle {
