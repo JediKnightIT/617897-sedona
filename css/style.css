@@ -641,7 +641,6 @@ img {
   width: 46px;
   height: 48px;
   fill: #fff;
-  text-align: center;
   background-color: #81b3d2;
 }
 
@@ -655,14 +654,18 @@ img {
   background-color: #5496bd;
 }
 
-.footer__copyright-text {
-  font-weight: 400;
-  line-height: 26px;
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
 }
 
-.footer__copyright {
-  width: 33.3%;
-  text-align: center;
+.footer__copyright-text {
+  margin: 0;
+  margin-right: 8px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .footer__copyright-link:hover,
