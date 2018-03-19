@@ -31,6 +31,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 1200px;
@@ -618,14 +623,11 @@ a {
 
 .socials__list {
   display: flex;
-  justify-content: center;
-  margin: 0;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
-}
-
-.socials__item {
-  margin-right: 6px;
 }
 
 .socials__item:last-child {
@@ -633,8 +635,10 @@ a {
 }
 
 .socials__link {
-  display: inline-block;
-  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
   height: 48px;
   fill: #fff;
   text-align: center;
