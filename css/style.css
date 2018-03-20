@@ -178,7 +178,7 @@ img {
 }
 
 .info {
-  padding: 60px;
+  padding: 0 6%;
   background-color: #fff;
 }
 
@@ -187,6 +187,8 @@ img {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   list-style: none;
 }
 
@@ -214,7 +216,7 @@ img {
 }
 
 .other-reasons {
-  padding: 45px;
+  padding: 0 6%;
   background-color: #eee;
 }
 
@@ -223,6 +225,8 @@ img {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  padding-top: 45px;
+  padding-bottom: 45px;
   list-style: none;
 }
 
@@ -357,6 +361,7 @@ img {
 /* ===== Стили для основного контента на станице hotels */
 
 .filter {
+  padding: 0 6%;
   background-color: #2a3e45;
   background-image: url("../img/hotels/filter-bcg.jpg");
   background-position: 0 0;
@@ -366,7 +371,8 @@ img {
 
 .filter__form {
   display: flex;
-  padding: 27px 73px;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 .filter__form-fieldset {
@@ -465,6 +471,7 @@ img {
 }
 
 .sorting {
+  padding: 0 6%;
   background-color: #fefefe;
 }
 
@@ -526,6 +533,7 @@ img {
 }
 
 .hotels {
+  padding: 0 6%;
   background-color: #fefefe;
 }
 
@@ -538,7 +546,8 @@ img {
 
 .hotels__item {
   display: flex;
-  padding: 30px 73px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -627,7 +636,9 @@ img {
 .footer {
   display: flex;
   align-items: center;
-  padding: 35px 73px;
+  padding: 0 6%;
+  padding-top: 35px;
+  padding-bottom: 35px;
   background-color: rgba(249, 251, 246, .9);
 }
 
