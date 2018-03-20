@@ -161,10 +161,28 @@ img {
 }
 
 .reason__text {
+  position: relative;
   margin: 0;
   margin-bottom: 25px;
   font-weight: 400;
   color: #fff;
+}
+
+.reason__text-element::before,
+.reason__text-element::after {
+  position: absolute;
+  bottom: 10px;
+  content: "";
+  width: 9px;
+  height: 1px;
+  background-color: #fff;
+}
+.reason__text-element::before {
+  left: 126px;
+}
+
+.reason__text-element::after {
+  right: 127px;
 }
 
 .hidden {
@@ -243,11 +261,29 @@ img {
 }
 
 .other-reasons__text {
+  position: relative;
   margin: 0 auto;
   margin-bottom: 20px;
   width: 270px;
   font-weight: 400;
   color: #333;
+}
+
+.other-reasons__text-element::before,
+.other-reasons__text-element::after {
+  position: absolute;
+  bottom: 10px;
+  content: "";
+  width: 9px;
+  height: 1px;
+  background-color: #000;
+}
+.other-reasons__text-element::before {
+  left: 111px;
+}
+
+.other-reasons__text-element::after {
+  right: 110px;
 }
 
 .hotel-search {
