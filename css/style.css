@@ -56,10 +56,26 @@ img {
   margin: auto;
 }
 
+.header__nav {
+  padding: 0 6%;
+}
+
 .header__list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
   list-style: none;
+}
+
+.header__item {
+  width: 20%;
+}
+
+.header__item_align-right {
+  text-align: right;
 }
 
 .header__link {
