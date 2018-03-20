@@ -99,8 +99,10 @@
         </section>
         <section class="sorting">
           <h2 class="visually-hidden">Сортировка жилья</h2>
-          <span class="sorting__description">Найдено: 3</span>
-          <span class="sorting__text">Сортировка:</span>
+          <div class="wrap-sorting">
+            <span class="sorting__description">Найдено: 3</span>
+            <span class="sorting__text">Сортировка:</span>
+          </div>
           <ul class="sorting__list">
             <li class="sorting__item">
               <a class="sorting__link sorting__link_active" href="#">По цене</a>
@@ -112,16 +114,18 @@
               <a class="sorting__link" href="#">По рейтингу</a>
             </li>
           </ul>
-          <a class="triangle" href="#" aria-label="Сортировка по возрастанию">
-            <svg class="triangle-icon" width="11" height="10">
-						  <use xlink:href="img/sprite.svg#triangle-up"></use>
-					  </svg>
-          </a>
-          <a class="triangle triangle_active" href="#" aria-label="Сортировка по убыванию">
-            <svg class="triangle-icon" width="11" height="10">
-              <use xlink:href="img/sprite.svg#triangle-down"></use>
-            </svg>
-          </a>
+          <div class="wrap-triangle">
+            <a class="triangle" href="#" aria-label="Сортировка по возрастанию">
+              <svg class="triangle-icon" width="11" height="10">
+                <use xlink:href="img/sprite.svg#triangle-up"></use>
+              </svg>
+            </a>
+            <a class="triangle triangle_active" href="#" aria-label="Сортировка по убыванию">
+              <svg class="triangle-icon" width="11" height="10">
+                <use xlink:href="img/sprite.svg#triangle-down"></use>
+              </svg>
+            </a>
+          </div>
         </section>
         <section class="hotels">
           <h2 class="visually-hidden">Результат сортировки жилья</h2>

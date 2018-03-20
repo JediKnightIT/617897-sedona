@@ -38,7 +38,8 @@ img {
 
 .wrapper {
   margin: 0 auto;
-  width: 1200px;
+  min-width: 768;
+  max-width: 1200px;
   box-shadow: 0 0 10px 3px lightgrey;
 }
 
@@ -54,6 +55,7 @@ img {
   left: 0;
   right: 0;
   margin: auto;
+  z-index: 1;
 }
 
 .header__nav {
@@ -99,11 +101,23 @@ img {
 /* ===== Стили для основного контента на главной странице */
 
 .welcome {
+  position: relative;
   background-color: #31444f;
   background-image: url("../img/index/welcome-bcg.jpg");
   background-position: 0 -85px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.welcome::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 57px;
+  background-image: url("../img/sprite.svg#mask");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .welcome__img {
@@ -569,7 +583,6 @@ img {
 }
 
 .hotels {
-  padding: 0 6%;
   background-color: #fefefe;
 }
 
@@ -582,6 +595,7 @@ img {
 
 .hotels__item {
   display: flex;
+  padding: 0 6%;
   padding-top: 30px;
   padding-bottom: 30px;
   border-top: 1px solid #e5e5e5;
@@ -622,6 +636,11 @@ img {
 }
 
 .hotels__about {
+  margin: 0;
+  padding-top: 3px;
+  padding-right: 13px;
+  padding-bottom: 3px;
+  padding-left: 16px;
   font: inherit;
   font-weight: 400;
   color: #333;
@@ -660,7 +679,17 @@ img {
 }
 
 .wrap-rating {
-  padding-top: 75px;
+  padding-top: 48px;
+}
+
+.wrap-rating::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/sprite.svg#star");
+  background-position: 0 0;
+  background-repeat: repeat-x;
 }
 
 .hotels__about_rating {
