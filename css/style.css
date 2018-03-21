@@ -104,26 +104,21 @@ img {
   position: relative;
   background-color: #31444f;
   background-image: url("../img/index/welcome-bcg.jpg");
-  background-position: 0 -85px;
+  background-position: 0 28%;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.welcome::after {
-  position: absolute;
-  bottom: 0;
-  content: "";
-  width: 100%;
-  height: 57px;
-  background-image: url("../img/sprite.svg#mask");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .welcome__img {
   display: block;
   margin: 0 auto;
   padding: 75px 0;
+}
+
+.welcome__mask {
+  position: absolute;
+  bottom: 0;
+  fill: #fff;
 }
 
 .promo {
@@ -680,16 +675,6 @@ img {
 
 .wrap-rating {
   padding-top: 48px;
-}
-
-.wrap-rating::before {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/sprite.svg#star");
-  background-position: 0 0;
-  background-repeat: repeat-x;
 }
 
 .hotels__about_rating {
