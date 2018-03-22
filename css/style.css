@@ -615,11 +615,20 @@ img {
 }
 
 .sorting {
+  display: flex;
+  align-items: center;
   padding: 0 6%;
+  padding-top: 33px;
+  padding-bottom: 33px;
   background-color: #fefefe;
 }
 
+.wrap-sorting {
+  margin-right: 38px;
+}
+
 .sorting__description {
+  margin-right: 45px;
   font-size: 21px;
   line-height: 26px;
 }
@@ -631,7 +640,11 @@ img {
 }
 
 .sorting__list {
+  display: flex;
+  justify-content: space-between;
+  width: 249px;
   margin: 0;
+  margin-right: auto;
   padding: 0;
   list-style: none;
 }
