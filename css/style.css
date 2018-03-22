@@ -453,6 +453,16 @@ img {
   top: 13px;
   left: 13px;
   stroke: #a9a9a9;
+  transition: 0.3s;
+}
+
+.form__btn_decrement:hover,
+.form__btn_decrement:focus {
+  stroke: #000;
+}
+
+.form__btn_decrement:active {
+  stroke: #81b3d2;
 }
 
 .hotel-search__form-input_short {
@@ -465,6 +475,16 @@ img {
   top: 13px;
   right: 14px;
   stroke: #a9a9a9;
+  transition: 0.3s;
+}
+
+.form__btn_increment:hover,
+.form__btn_increment:focus {
+  stroke: #000;
+}
+
+.form__btn_increment:active {
+  stroke: #81b3d2;
 }
 
 .button__find {
