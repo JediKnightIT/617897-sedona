@@ -187,6 +187,7 @@ img {
   height: 1px;
   background-color: #fff;
 }
+
 .reason__text-element::before {
   left: 126px;
 }
@@ -288,6 +289,7 @@ img {
   height: 1px;
   background-color: #000;
 }
+
 .other-reasons__text-element::before {
   left: 111px;
 }
@@ -327,6 +329,7 @@ img {
 }
 
 .button__hotel-search {
+  position: relative;
   padding: 23px 140px;
   background-color: #766357;
 }
@@ -341,6 +344,43 @@ img {
   background-color: #503e33;
 }
 
+.hotel__modal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 569px;
+  padding: 55px;
+  background-color: #fff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  box-sizing: border-box;
+}
+
+.hotel-search__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel-search__form-row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 458px;
+  margin-bottom: 30px;
+}
+
+.hotel-search__form-row_indentation {
+  margin-bottom: 54px;
+}
+
+.hotel-search__form-label {
+  margin-right: 20px;
+}
+
+.hotel-search__form-label-short {
+  margin-right: 0;
+}
+
 .hotel-search__form-label,
 .hotel-search__form-input {
   font: inherit;
@@ -348,13 +388,29 @@ img {
 }
 
 .hotel-search__form-input {
+  width: 346px;
+  padding: 4px 35px 4px 13px;
   background-color: #f2f2f2;
   border: 2px solid transparent;
-  ;
+  box-sizing: border-box;
+}
+
+.form__btn {
+  position: absolute;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.form__btn_calendar {
+  position: absolute;
+  right: 9px;
+  bottom: 5px;
 }
 
 .calendar__icon {
-  fill: #cacaca;
+  fill: #a9a9a9;
   transition: 0.3s;
 }
 
@@ -387,6 +443,28 @@ img {
   background-color: #fff;
   border: 2px solid #e5e5e5;
   outline: transparent;
+}
+
+.wrap-input {
+  position: relative;
+}
+
+.form__btn_decrement {
+  top: 13px;
+  left: 13px;
+  stroke: #a9a9a9;
+}
+
+.hotel-search__form-input_short {
+  width: 114px;
+  padding: 4px 0;
+  text-align: center;
+}
+
+.form__btn_increment {
+  top: 13px;
+  right: 14px;
+  stroke: #a9a9a9;
 }
 
 .button__find {
