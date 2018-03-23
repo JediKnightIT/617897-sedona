@@ -564,7 +564,6 @@ img {
 }
 
 /* ===== Стили для основного контента на станице hotels */
-
 .filter {
   padding: 0 6%;
 
@@ -581,23 +580,23 @@ img {
   padding-bottom: 27px;
 }
 
+.filter__wrap {
+  display: flex;
+  width: 66%;
+}
+
 .filter__form-fieldset {
   margin: 0;
   border: none;
   padding: 0;
 }
 
-.filter__form-fieldset_infrastructure,
-.filter__form-fieldset_dwelling {
-  width: 25%;
-}
-
-.filter__form-fieldset_dwelling {
-  margin-right: auto;
+.filter__form-fieldset_infrastructure {
+  margin-right: 16%;
 }
 
 .filter__form-fieldset_cost {
-  width: 34%;
+  width: 33%;
 }
 
 .filter__form-legend {
