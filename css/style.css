@@ -111,6 +111,9 @@ img {
 .welcome {
   position: relative;
 
+  min-height: 435px;
+  padding-top: 76px;
+
   background-color: #31444f;
   background-image: url("../img/index/welcome-bcg.jpg");
   background-position: 0 28%;
@@ -118,10 +121,23 @@ img {
   background-size: cover;
 }
 
+.welcome::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 57px;
+
+  background-image: url("../img/index/welcome-element.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 57px;
+}
+
 .welcome__img {
   display: block;
   margin: 0 auto;
-  padding: 75px 0;
 }
 
 .welcome__mask {
@@ -179,7 +195,7 @@ img {
 }
 
 .reason__title {
-  width: 200px;
+  width: 50%;
   margin: 0 auto;
   margin-bottom: 20px;
 
