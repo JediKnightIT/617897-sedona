@@ -369,6 +369,7 @@ img {
   color: #fff;
 
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button__hotel-search {
@@ -606,6 +607,10 @@ img {
   color: #fff;
 }
 
+.filter__form-legend_margin {
+  margin-bottom: 10px;
+}
+
 .filter__form-list {
   margin: 0;
   padding: 0;
@@ -667,49 +672,128 @@ img {
   outline: transparent;
 }
 
-.filter__form-row {
-  margin: 0;
-  border: 1px solid #fff;
+.price-controls {
+position: relative;
 
-  border-radius: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 32px;
+  margin-bottom: 20px;
+
+  font-style: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 3px;
 }
 
-.filter__form-input::-webkit-input-placeholder {
+.price-controls::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls__label {
+  width: 90px;
+  padding-left: 45px;
+
+  font-weight: 400;
   color: #fff;
-}
+  line-height: 38px;
 
-.filter__form-input::-moz-placeholder {
-  color: #fff;
-}
-
-.filter__form-input::-webkit-input-placeholder {
-  color: #fff;
-}
-
-.filter__form-range {
-  height: 3px;
-
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.filter__circle {
-  border: none;
-
-  background-color: transparent;
-
-  outline: none;
   cursor: pointer;
 }
 
+.price-controls__input {
+  width: 50px;
+  margin: 0;
+  border: none;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+}
+
+.price-controls__input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.price-controls__input::-moz-placeholder {
+  color: #fff;
+}
+
+.price-controls__input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.range {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range__scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range__bar {
+  width: 80%;
+  height: 2px;
+
+  background: #fff;
+}
+
+.range__toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 3px 0 rgba(171, 171, 171, 0.9);
+  cursor: pointer;
+}
+
+.range__toggle:hover {
+  transform: scale(1.1);
+}
+
+.range__toggle-min {
+  left: 0;
+}
+
+.range__toggle-max {
+  left: 80%;
+}
+
+
 .button__show {
+  display: block;
+  margin: 0 auto;
   border: 2px solid #fff;
-  padding: 5px 35px;
+  padding: 6px 35px;
 
   font-size: 14px;
   font-weight: 400;
 
   background-color: transparent;
   border-radius: 2px;
+
 }
 
 .button__show:hover,

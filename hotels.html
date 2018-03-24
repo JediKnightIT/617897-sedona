@@ -76,25 +76,22 @@
               </fieldset>
             </div>
             <fieldset class="filter__form-fieldset filter__form-fieldset_cost">
-              <legend class="filter__form-legend">Стоимость в сутки (Р):</legend>
-              <p class="filter__form-row">
-                <label class="filter__form-label" for="min-price" aria-label="Минимальная стоимость">От</label>
-                <input class="filter__form-input" id="min-price" type="text" name="minimum-price" placeholder="0">
-                <label class="filter__form-label" for="max-price" aria-label="Максимальная стоимость">До</label>
-                <input class="filter__form-input" id="max-price" type="text" name="maximum-price" placeholder="3000">
-              </p>
-              <p class="filter__form-range">
-                <button class="filter__circle" type="button">
-                  <svg class="circle-icon" width="23" height="23">
-                    <use xlink:href="img/sprite.svg#filter-circle"></use>
-                  </svg>
-                </button>
-                <button class="filter__circle" type="button">
-                  <svg class="circle-icon" width="23" height="23">
-                    <use xlink:href="img/sprite.svg#filter-circle"></use>
-                  </svg>
-                </button>
-              </p>
+              <legend class="filter__form-legend filter__form-legend_margin">Стоимость в сутки (Р):</legend>
+              <div class="price-controls">
+                <label class="price-controls__label" for="min-price" aria-label="Минимальная стоимость">От
+                  <input class="price-controls__input" id="min-price" type="text" name="minimum-price" placeholder="0">
+                </label>
+                <label class="price-controls__label" for="max-price" aria-label="Максимальная стоимость">До
+                  <input class="price-controls__input" id="max-price" type="text" name="maximum-price" placeholder="3000">
+                </label>
+              </div>
+              <div class="range">
+                <div class="range__scale">
+                  <div class="range__bar"></div>
+                </div>
+                <div class="range__toggle range__toggle-min"></div>
+                <div class="range__toggle range__toggle-max"></div>
+              </div>
             <button class="button button__show" type="submit">Показать</button>
             </fieldset>
           </form>
