@@ -420,20 +420,13 @@ img {
   box-sizing: border-box;
 }
 
-.hotel-search__form {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .hotel-search__form-row {
   position: relative;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 458px;
+  width: 459px;
   margin-bottom: 30px;
+
+  text-align: left;
 }
 
 .hotel-search__form-row_indentation {
@@ -441,11 +434,16 @@ img {
 }
 
 .hotel-search__form-label {
-  margin-right: 20px;
+  display: inline-block;
+
+  width: 109px;
+
+  vertical-align: baseline;
 }
 
 .hotel-search__form-label-short {
-  margin-right: 0;
+  width: 60px;
+  margin-left: 51px;
 }
 
 .hotel-search__form-label,
@@ -519,47 +517,56 @@ img {
 }
 
 .wrap-input {
-  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+
+  width: 114px;
+
+  background-color: #f2f2f2;
 }
 
-.form__btn_decrement {
-  top: 13px;
-  left: 13px;
+.form__decrement,
+.form__increment {
+  width: 38px;
+  border: none;
 
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.decrement__icon {
   stroke: #a9a9a9;
   transition: 0.3s;
 }
 
-.form__btn_decrement:hover,
-.form__btn_decrement:focus {
+.decrement__icon:hover,
+.decrement__icon:focus {
   stroke: #000;
 }
 
-.form__btn_decrement:active {
+.decrement__icon:active {
   stroke: #81b3d2;
 }
 
 .hotel-search__form-input_short {
-  width: 114px;
+  width: 38px;
   padding: 4px 0;
 
   text-align: center;
 }
 
-.form__btn_increment {
-  top: 13px;
-  right: 14px;
-
+.increment__icon {
   stroke: #a9a9a9;
   transition: 0.3s;
 }
 
-.form__btn_increment:hover,
-.form__btn_increment:focus {
+.increment__icon:hover,
+.increment__icon:focus {
   stroke: #000;
 }
 
-.form__btn_increment:active {
+.increment__icon:active {
   stroke: #81b3d2;
 }
 
