@@ -199,10 +199,10 @@ img {
 
 .reason__text-element::before,
 .reason__text-element::after {
+  content: "";
+
   position: absolute;
   bottom: 10px;
-
-  content: "";
 
   width: 9px;
   height: 1px;
@@ -316,10 +316,10 @@ img {
 
 .other-reasons__text-element::before,
 .other-reasons__text-element::after {
+  content: "";
+
   position: absolute;
   bottom: 10px;
-
-  content: "";
 
   width: 9px;
   height: 1px;
@@ -609,17 +609,51 @@ img {
 .filter__form-list {
   margin: 0;
   padding: 0;
+  padding-left: 41px;
 
   list-style: none;
 }
 
 .filter__form-item {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .filter__form-label {
+  position: relative;
+
+  display: block;
+
   font-weight: 400;
   color: #fff;
+
+  cursor: pointer;
+}
+
+.filter__form-label::before {
+  content: "";
+
+  position: absolute;
+  top: -4px;
+  left: -41px;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/hotels/checkbox-off.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.filter__input-focus:focus + .filter__form-label {
+  outline: 2px solid #81b3d2;
+}
+
+.filter__input-focus:checked + .filter__form-label::before {
+  width: 27px;
+
+  background-image: url("../img/hotels/checkbox-on.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .filter__form-input {
