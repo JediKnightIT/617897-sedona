@@ -684,6 +684,20 @@ img {
   background-repeat: no-repeat;
 }
 
+.filter__input-focus:disabled + .filter__form-label::before {
+  background-image: url("../img/hotels/checkbox-off-disabled.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.filter__input-focus:disabled:checked + .filter__form-label::before {
+  width: 27px;
+
+  background-image: url("../img/hotels/checkbox-on-disabled.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 .filter__form-input {
   border: none;
 
