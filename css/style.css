@@ -185,8 +185,10 @@ img {
 }
 
 .wrap-reason {
-  width: 34%;
-  padding: 40px 52px;
+  flex-grow: 1;
+  flex-basis: 33%;
+  min-height: 256px;
+  padding-top: 45px;
 
   text-align: center;
 
@@ -195,7 +197,7 @@ img {
 }
 
 .reason__title {
-  width: 50%;
+  width: 151px;
   margin: 0 auto;
   margin-bottom: 20px;
 
@@ -206,11 +208,16 @@ img {
 .reason__text {
   position: relative;
 
-  margin: 0;
+  width: 76%;
+  margin: 0 auto;
   margin-bottom: 25px;
 
   font-weight: 400;
   color: #fff;
+}
+
+.reason__text-element {
+  width: 50px;
 }
 
 .reason__text-element::before,
@@ -227,26 +234,33 @@ img {
 }
 
 .reason__text-element::before {
-  left: 126px;
+  left: -1px;
 }
 
 .reason__text-element::after {
-  right: 127px;
-}
-
-.hidden {
-  width: 66%;
-  height: 255px;
-
-  overflow: hidden;
+  right: 0;
 }
 
 .reason__img {
-  max-width: 100%;
+  flex-grow: 1;
+  flex-basis: 66%;
+
+  background-color: #81b3d2;
+  background-image: url("../img/index/city-bcg.jpg");
+  background-position: 50% 54%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reason__img_nature {
+  background-color: #81b3d2;
+  background-image: url("../img/index/nature-bcg.jpg");
+  background-position: 50% 54%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .info {
-  padding: 0 6%;
   background-color: #fff;
 }
 
@@ -262,7 +276,7 @@ img {
 }
 
 .info__item {
-  width: 33.3%;
+  width: 33%;
 
   text-align: center;
 }
@@ -281,7 +295,7 @@ img {
 }
 
 .info__text {
-  width: 300px;
+  width: 74%;
   margin: 0 auto;
 
   font-weight: 400;
@@ -289,8 +303,6 @@ img {
 }
 
 .other-reasons {
-  padding: 0 6%;
-
   background-color: #eee;
 }
 
@@ -306,7 +318,7 @@ img {
 }
 
 .other-reasons__item {
-  width: 33.3%;
+  width: 33%;
 
   text-align: center;
 }
@@ -322,12 +334,16 @@ img {
 .other-reasons__text {
   position: relative;
 
-  width: 270px;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 20px;
 
   font-weight: 400;
   color: #333;
+}
+
+.other-reasons__text-element {
+  width: 50px;
 }
 
 .other-reasons__text-element::before,
@@ -344,11 +360,11 @@ img {
 }
 
 .other-reasons__text-element::before {
-  left: 111px;
+  left: -1px;
 }
 
 .other-reasons__text-element::after {
-  right: 110px;
+  right: 0;
 }
 
 .hotel-search {
@@ -1066,7 +1082,6 @@ position: relative;
   display: flex;
   align-items: center;
 
-  padding: 0 6%;
   padding-top: 35px;
   padding-bottom: 35px;
 
@@ -1078,7 +1093,7 @@ position: relative;
 }
 
 .footer__hashtag {
-  width: 33.3%;
+  width: 33%;
   margin: 0;
 
   font-size: 21px;
@@ -1087,7 +1102,7 @@ position: relative;
 }
 
 .socials {
-  width: 33.3%;
+  width: 33%;
 }
 
 .socials__list {
@@ -1133,7 +1148,7 @@ position: relative;
   justify-content: center;
   align-items: center;
 
-  width: 33.3%;
+  width: 33%;
 }
 
 .footer__copyright-text {
