@@ -25,11 +25,11 @@
             <li class="header__item">
               <a class="header__link" href="#">Фото и видео</a>
             </li>
-            <li class="header__item header__item_align-right">
-              <a class="header__link" href="#">Карта штата</a>
+            <li class="header__item header__item_align-right header__item_margin">
+              <a class="header__link header__link_letter-spacing" href="#">Карта штата</a>
             </li>
             <li class="header__item header__item_align-right">
-              <a class="header__link header__link_active" href="#">Гостиницы</a>
+              <a class="header__link" href="hotels.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -41,7 +41,7 @@
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="POST">
             <div class="filter__wrap">
               <fieldset class="filter__form-fieldset filter__form-fieldset_infrastructure">
-                <legend class="filter__form-legend">Инфраструктура:</legend>
+                <legend class="filter__form-legend filter__form-legend_infrastructure">Инфраструктура:</legend>
                 <ul class="filter__form-list">
                   <li class="filter__form-item">
                     <input class="visually-hidden filter__input-focus" id="filter-pool" type="checkbox" name="pool" checked>
@@ -134,9 +134,9 @@
                 <img class="hotels__img" src="img/hotels/hotel.jpg" width="135" height="90" alt="Гостиница">
               </a>
               <div class="wrap-info">
-                <a class="hotels__link" href="#" aria-label="Информация о гостинице">
-                  <h3 class="hotels__name">Amara Resort &#38; Spa</h3>
-                </a>
+                <h3 class="hotels__name">
+                  <a class="hotels__link" href="#" aria-label="Информация о гостинице">Amara Resort &#38; Spa</a>
+                </h3>
                 <p class="hotels__row">
                   <span class="hotels__about">Гостиница</span>
                   <span class="hotels__about">От 4000 р.</span>
@@ -167,9 +167,9 @@
                 <img class="hotels__img" src="img/hotels/motel.jpg" width="135" height="90" alt="Мотель">
               </a>
               <div class="wrap-info">
-                <a class="hotels__link" href="#" aria-label="Информация о мотеле">
-                  <h3 class="hotels__name">Desert Quail Inn</h3>
-                </a>
+                <h3 class="hotels__name">
+                  <a class="hotels__link" href="#" aria-label="Информация о мотеле">Desert Quail Inn</a>
+                </h3>
                 <p class="hotels__row">
                   <span class="hotels__about">Мотель</span>
                   <span class="hotels__about">От 3000 р.</span>
@@ -197,9 +197,9 @@
                 <img class="hotels__img" src="img/hotels/apartments.jpg" width="135" height="90" alt="Аппартаменты">
               </a>
               <div class="wrap-info">
-                <a class="hotels__link" href="#" aria-label="Информация об апартаментах">
-                  <h3 class="hotels__name">Villas at Poco Diablo</h3>
-                </a>
+                <h3 class="hotels__name">
+                  <a class="hotels__link" href="#" aria-label="Информация об апартаментах">Villas at Poco Diablo</a>
+                </h3>
                 <p class="hotels__row">
                   <span class="hotels__about">Апартаменты</span>
                   <span class="hotels__about">От 2000 р.</span>
@@ -228,21 +228,21 @@
           <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link" href="#" aria-label="Твиттер">
-                <svg class="socials__icon" width="25" height="25">
+                <svg class="socials__icon" width="17" height="15">
 						      <use xlink:href="img/sprite.svg#twitter"></use>
 					      </svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="#" aria-label="Фейсбук">
-                <svg class="socials__icon" width="25" height="25">
+                <svg class="socials__icon" width="12" height="22">
 						      <use xlink:href="img/sprite.svg#facebook"></use>
 					      </svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="#" aria-label="Ютюб">
-                <svg class="socials__icon" width="25" height="25">
+                <svg class="socials__icon" width="20" height="16">
 						      <use xlink:href="img/sprite.svg#youtube"></use>
 					      </svg>
               </a>
@@ -250,9 +250,9 @@
           </ul>
         </div>
         <div class="footer__copyright">
-          <span class="footer__copyright-text">Website by</span>
+          <p class="footer__copyright-text">Website by</p>
           <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank" aria-label="Логотип HTML Academy">
-            <svg class="footer__copyright-logo" width="115" height="45">
+            <svg class="footer__copyright-logo" width="115" height="41">
 						  <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
 					  </svg>
           </a>

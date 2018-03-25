@@ -613,23 +613,26 @@ img {
 /* ===== Стили для основного контента на станице hotels */
 .filter {
   padding: 0 6%;
+  padding-top: 28px;
+  padding-bottom: 5px;
 
   background-color: #2a3e45;
   background-image: url("../img/hotels/filter-bcg.jpg");
-  background-position: 0 0;
+  background-position: 0 16%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .filter__form {
   display: flex;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  justify-content: space-between;
 }
 
 .filter__wrap {
   display: flex;
-  width: 66%;
+  flex-basis: 66%;
+  margin-right: 10%;
+
 }
 
 .filter__form-fieldset {
@@ -639,34 +642,40 @@ img {
 }
 
 .filter__form-fieldset_infrastructure {
-  margin-right: 16%;
+  margin-right: 18.5%;
 }
 
 .filter__form-fieldset_cost {
-  width: 33%;
+  flex-basis: 33%;
 }
 
 .filter__form-legend {
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   font-size: 16px;
   color: #fff;
 }
 
+.filter__form-legend_infrastructure {
+  letter-spacing: 0.2px;
+}
+
 .filter__form-legend_margin {
   margin-bottom: 10px;
+
+  letter-spacing: 0.1px;
 }
 
 .filter__form-list {
   margin: 0;
   padding: 0;
-  padding-left: 41px;
+  padding-left: 40px;
 
   list-style: none;
 }
 
 .filter__form-item {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .filter__form-label {
@@ -684,8 +693,8 @@ img {
   content: "";
 
   position: absolute;
-  top: -4px;
-  left: -41px;
+  top: -2px;
+  left: -40px;
 
   width: 23px;
   height: 23px;
@@ -735,14 +744,10 @@ img {
 .price-controls {
 position: relative;
 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
   height: 32px;
   margin-bottom: 20px;
 
-  font-style: 0;
+  font-size: 0;
 
   border: 2px solid #ffffff;
   border-radius: 3px;
@@ -758,17 +763,20 @@ position: relative;
   width: 2px;
   height: 22px;
 
-  background: #ffffff;
+  background: #fff;
   transform: translate(-50%, -50%);
 }
 
 .price-controls__label {
-  width: 90px;
-  padding-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+  padding: 5px 9px;
 
+  font-size: 14px;
   font-weight: 400;
   color: #fff;
-  line-height: 38px;
+  text-align: right;
 
   cursor: pointer;
 }
@@ -846,7 +854,7 @@ position: relative;
   display: block;
   margin: 0 auto;
   border: 2px solid #fff;
-  padding: 6px 35px;
+  padding: 3px 34px;
 
   font-size: 14px;
   font-weight: 400;
@@ -870,8 +878,8 @@ position: relative;
   align-items: flex-end;
 
   padding: 0 6%;
-  padding-top: 33px;
-  padding-bottom: 33px;
+  padding-top: 29px;
+  padding-bottom: 31px;
 
   background-color: #fefefe;
 }
@@ -895,14 +903,16 @@ position: relative;
 
 .sorting__list {
   display: flex;
-  justify-content: space-between;
 
-  width: 249px;
   margin: 0;
   margin-right: auto;
   padding: 0;
 
   list-style: none;
+}
+
+.sorting__item {
+  margin-right: 33px;
 }
 
 .sorting__link {
@@ -964,10 +974,10 @@ position: relative;
 
 .hotels__item {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 
   padding: 0 6%;
-  padding-top: 30px;
+  padding-top: 29px;
   padding-bottom: 30px;
 
   border-top: 1px solid #e5e5e5;
@@ -978,11 +988,20 @@ position: relative;
   margin-right: 30px;
 }
 
-.hotels__link {
-  display: inline-block;
+.hotels__name {
+  margin: 0;
+  margin-top: -3px;
+  margin-bottom: 5px;
 
   font-size: 21px;
   line-height: 26px;
+
+  letter-spacing: 0.2px;
+}
+
+.hotels__link {
+  display: inline-block;
+
   color: #000;
 }
 
@@ -999,18 +1018,13 @@ position: relative;
   margin-right: auto;
 }
 
-.hotels__name {
-  margin: 0;
-  margin-bottom: 12px;
-}
-
 .hotels__row {
   display: flex;
   justify-content: space-between;
 
   width: 181px;
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
 
 .hotels__about {
@@ -1023,7 +1037,7 @@ position: relative;
 
 .hotels__info {
   margin-right: 2px;
-  padding: 3px 17px;
+  padding: 4px 17px;
 
   color: #fff;
 
@@ -1042,7 +1056,7 @@ position: relative;
 }
 
 .hotels__booking {
-  padding: 3px 17px;
+  padding: 4px 17px;
 
   color: #fff;
 
@@ -1064,6 +1078,8 @@ position: relative;
   margin-bottom: 41px;
 
   text-align: right;
+
+  letter-spacing: 2px;
 }
 
 .hotels__stars-icon {
