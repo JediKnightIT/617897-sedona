@@ -42,7 +42,7 @@ img {
 .wrapper {
   position: relative;
 
-  min-width: 768;
+  min-width: 768px;
   max-width: 1200px;
   margin: 0 auto;
 
@@ -104,6 +104,9 @@ img {
 .header__link {
   line-height: 26px;
   color: #000;
+
+  -webkit-transition: 0.2s;
+          transition: 0.2s;
 }
 
 .header__link:hover,
@@ -156,12 +159,6 @@ img {
   margin: 0 auto;
 }
 
-.welcome__mask {
-  position: absolute;
-  bottom: 0;
-
-  fill: #fff;
-}
 
 .promo {
   padding: 0 6%;
@@ -216,6 +213,7 @@ img {
   text-align: center;
 
   background-color: #81b3d2;
+
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -268,7 +266,7 @@ img {
 .reason__img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1;
+              flex-grow: 1;
   -ms-flex-preferred-size: 66%;
       flex-basis: 66%;
 
@@ -438,6 +436,9 @@ img {
 
   text-transform: uppercase;
   cursor: pointer;
+
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
 }
 
 .button__hotel-search {
@@ -507,6 +508,7 @@ img {
 
 .hotel-search__form-input {
   width: 346px;
+  min-height: 38px;
   border: 2px solid transparent;
   padding: 4px 35px 4px 11px;
 
@@ -535,8 +537,8 @@ img {
 
 .calendar__icon {
   fill: #a9a9a9;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .calendar__icon:hover,
@@ -599,8 +601,8 @@ img {
 
 .decrement__icon {
   stroke: #a9a9a9;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .decrement__icon:hover,
@@ -621,8 +623,8 @@ img {
 
 .increment__icon {
   stroke: #a9a9a9;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+          transition: 0.2s;
 }
 
 .increment__icon:hover,
@@ -814,7 +816,7 @@ position: relative;
   width: 2px;
   height: 22px;
 
-  background: #fff;
+  background-color: #fff;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -841,7 +843,7 @@ position: relative;
   color: inherit;
   font: inherit;
 
-  background: none;
+  background-color: transparent;
 }
 
 .price-controls__input::-webkit-input-placeholder {
@@ -865,14 +867,14 @@ position: relative;
 .range__scale {
   height: 2px;
 
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range__bar {
   width: 80%;
   height: 2px;
 
-  background: #fff;
+  background-color: #fff;
 }
 
 .range__toggle {
@@ -882,9 +884,10 @@ position: relative;
   width: 4px;
   height: 4px;
 
-  background: #ababab;
+  background-color: #ababab;
   border: 8px solid #fff;
   border-radius: 50%;
+
   -webkit-box-shadow: 0 2px 3px 0 rgba(171, 171, 171, 0.9);
           box-shadow: 0 2px 3px 0 rgba(171, 171, 171, 0.9);
   cursor: pointer;
@@ -1069,6 +1072,9 @@ position: relative;
 
 .hotels__link {
   color: #000;
+
+  -webkit-transition: 0.2s;
+          transition: 0.2s;
 }
 
 .hotels__link:hover,
@@ -1112,6 +1118,9 @@ position: relative;
   color: #fff;
 
   background-color: #81b3d2;
+
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
 }
 
 .hotels__info:hover,
@@ -1131,6 +1140,9 @@ position: relative;
   color: #fff;
 
   background-color: #766357;
+
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
 }
 
 .hotels__booking:hover,
@@ -1244,9 +1256,14 @@ position: relative;
   width: 46px;
   height: 48px;
 
-  fill: #fff;
-
   background-color: #81b3d2;
+
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
+
+.socials__icon {
+  fill: #fff;
 }
 
 .socials__link:hover,
@@ -1255,9 +1272,14 @@ position: relative;
 }
 
 .socials__link:active {
-  fill: #88b6d1;
   background-color: #5496bd;
 }
+
+.socials__link:active .socials__icon {
+  fill: #88b6d1;
+}
+
+
 
 .footer__copyright {
   display: -webkit-box;
