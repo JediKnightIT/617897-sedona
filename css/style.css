@@ -653,6 +653,11 @@ img {
   background-color: #5496bd;
 }
 
+.map__interactive {
+  width: 100%;
+  height: 590px;
+}
+
 /* ===== Стили для основного контента на станице hotels */
 .filter {
   padding: 0 6%;
