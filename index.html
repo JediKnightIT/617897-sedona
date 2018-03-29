@@ -7,7 +7,7 @@
     <title>Седона - жемчужина Аризоны</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="wrapper">
@@ -171,6 +171,7 @@
         </section>
         <article class="map">
           <h2 class="visually-hidden">Карта Седоны</h2>
+          <div class="map__interactive" id="map"></div>
           <img class="map__img" src="img/index/map.jpg" width="1200" height="590" alt="Месторасположение города Седона. 34 градуса северной широты и 111 градусов западной долготы">
         </article>
       </main>
@@ -212,5 +213,7 @@
       </footer>
     </div>
     <script src="js/svgxuse.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGHt_OEYXdVRzpyPXC5ZI8oSGGdTtclso&callback=initMap" async defer></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
