@@ -464,9 +464,9 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-
   z-index: 1;
 
+  display: none;
   width: 569px;
   padding: 55px;
 
@@ -476,6 +476,10 @@ img {
           box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.hotel__modal-show {
+  display: block;
 }
 
 .hotel-search__form-row {
