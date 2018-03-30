@@ -6,3 +6,6 @@ var modal = document.querySelector(".hotel__modal");
 
     modal.classList.toggle("hotel__modal-show");
   });
+
+
+
