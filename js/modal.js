@@ -5,15 +5,12 @@ var arrival = modal.querySelector("[name=arrival]");
 var departure = modal.querySelector("[name=departure]");
 var adults = modal.querySelector("[name=adults]");
 
-
-
 // появление/исчезновение формы поиска
   search.addEventListener("click", function(e) {
     e.preventDefault();
 
     modal.classList.toggle("hotel__modal-show");
     modal.classList.remove("hotel__modal-error");
-
   });
 
 // валидация формы
@@ -23,9 +20,7 @@ var adults = modal.querySelector("[name=adults]");
       e.preventDefault();
 
       modal.classList.add("hotel__modal-error");
-
     }
-
   });
 
 

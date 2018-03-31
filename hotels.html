@@ -7,7 +7,8 @@
     <title>Седона - жемчужина Аризоны</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <div class="wrapper">
@@ -81,7 +82,7 @@
                 <label class="price-controls__label" for="min-price" aria-label="Минимальная стоимость">От
                   <input class="price-controls__input" id="min-price" type="text" name="minimum-price" placeholder="0">
                 </label>
-                <label class="price-controls__label" for="max-price" aria-label="Максимальная стоимость">До
+                <label class="price-controls__label price-controls__label_padding" for="max-price" aria-label="Максимальная стоимость">До
                   <input class="price-controls__input" id="max-price" type="text" name="maximum-price" placeholder="3000">
                 </label>
               </div>
@@ -130,9 +131,7 @@
           <h2 class="visually-hidden">Результат сортировки жилья</h2>
           <ul class="hotels__list">
             <li class="hotels__item">
-              <a class="hotels__link-info" href="#" aria-label="Информация о гостинице">
-                <img class="hotels__img" src="img/hotels/hotel.jpg" width="135" height="90" alt="Гостиница">
-              </a>
+              <img class="hotels__img" src="img/hotels/hotel.jpg" width="135" height="90" alt="Гостиница">
               <div class="wrap-info">
                 <h3 class="hotels__name">
                   <a class="hotels__link" href="#" aria-label="Информация о гостинице">Amara Resort &#38; Spa</a>
@@ -163,9 +162,7 @@
               </div>
             </li>
             <li class="hotels__item">
-              <a class="hotels__link-info" href="#" aria-label="Информация о мотеле">
-                <img class="hotels__img" src="img/hotels/motel.jpg" width="135" height="90" alt="Мотель">
-              </a>
+              <img class="hotels__img" src="img/hotels/motel.jpg" width="135" height="90" alt="Мотель">
               <div class="wrap-info">
                 <h3 class="hotels__name">
                   <a class="hotels__link" href="#" aria-label="Информация о мотеле">Desert Quail Inn</a>
@@ -193,9 +190,7 @@
               </div>
             </li>
             <li class="hotels__item">
-              <a class="hotels__link-info" href="#" aria-label="Информация об апартаментах">
-                <img class="hotels__img" src="img/hotels/apartments.jpg" width="135" height="90" alt="Аппартаменты">
-              </a>
+              <img class="hotels__img" src="img/hotels/apartments.jpg" width="135" height="90" alt="Аппартаменты">
               <div class="wrap-info">
                 <h3 class="hotels__name">
                   <a class="hotels__link" href="#" aria-label="Информация об апартаментах">Villas at Poco Diablo</a>
@@ -259,6 +254,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/svgxuse.js" defer></script>
+    <script src="js/svgxuse.min.js" defer></script>
   </body>
 </html>
