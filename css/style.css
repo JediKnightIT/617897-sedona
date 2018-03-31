@@ -462,6 +462,10 @@ img {
 .hotel__modal {
   position: absolute;
   left: -4000px;
+
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+
   z-index: 1;
 
   display: block;
@@ -481,9 +485,41 @@ img {
 
 .hotel__modal-show {
   left: 50%;
+}
 
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+@keyframes error {
+  from {
+    transform: translateX(-50%) scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: translateX(-50%) scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: translateX(-50%) scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: translateX(-50%) scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: translateX(-50%) scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: translateX(-50%) scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: translateX(-50%) scale3d(1, 1, 1);
+  }
+}
+
+.hotel__modal-error {
+  animation-name: error;
+  animation-duration: 1s;
 }
 
 .hotel-search__form-row {
