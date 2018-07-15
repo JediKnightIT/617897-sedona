@@ -1,3 +1,5 @@
+'use strict';
+
 function initMap() {
   var uluru = {
     lat: 34.8702109,

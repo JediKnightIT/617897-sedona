@@ -1,3 +1,5 @@
+'use strict';
+
 var search = document.querySelector(".button__hotel-search");
 var modal = document.querySelector(".hotel__modal");
 var formValidation = modal.querySelector(".hotel-search__form");
