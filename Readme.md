@@ -5,6 +5,17 @@
 
 ---
 
+## Технические требования
+
+#### 1. Стандарты вёрстки: HTML5, CSS3, progressive enhancement, a11y;
+#### 2. Резиновая вёрстка: диапазон ширин от 768px до 1200px. Оосновной шириной является 1200px;
+#### 3. Используемая методология: БЭМ;
+#### 4. Кроссбраузерность: Chrome, Firefox, Opera, Safari, Edge и IE11;
+#### 5. Используемый шрифт: PT Sans;
+#### 6. Используемый кодгайд: [Code Guide](http://codeguide.co/) by @mdo.
+
+---
+
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
